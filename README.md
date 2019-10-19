@@ -8,7 +8,7 @@ For the details of our method, you should check the paper which would be public 
 
 The base process of our project is :
 
-* 0) training your own self-supervised model, which we don't show it here. *
+0) training your own self-supervised model, which we don't show it here.
 
 1) extract feature using pre-training model, from various datasets like VOC07
 
