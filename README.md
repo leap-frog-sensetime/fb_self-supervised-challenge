@@ -16,6 +16,8 @@ The base process of our project is :
 
 details are explained below.
 
+All the pretrained models and extracted features could be download [here](), extracting code is : 
+
 ### extracting features from pre-training model.
 
 we use [deeperCluster](https://research.fb.com/publications/unsupervised-pre-training-of-image-features-on-non-curated-data/) as our baseline. And fine-tune it on ImageNet-1k. You could download our fine-tuned model from [here]().
@@ -49,3 +51,11 @@ To train and test from scratch, you could follow:
 3) ./low-shot/aggre_svm_low_shot.sh           // test and aggregate testing results.
 
 ### places05 track
+
+To train from scratch, you could use:
+
+./places/eval_linear_places205.sh
+
+Use our trained places model(you could download trained places model [here]()):
+
+./places/eval_linear_places205_save_json.sh
