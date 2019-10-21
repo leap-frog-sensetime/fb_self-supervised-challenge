@@ -46,9 +46,9 @@ Training and testing instructions of this track is similar to voc07 track. You c
 
 To train and test from scratch, you could follow:
 
-1) ./low-shot/create_voc_low_shot_samples.sh  // generate low-shot samples
-2) ./low-shot/train_svm_low_shot_all.sh       // train low-shot features
-3) ./low-shot/aggre_svm_low_shot.sh           // test and aggregate testing results.
+1) ./low-shot/create_voc_low_shot_samples.sh                    // generate low-shot samples
+2) ./low-shot/train_svm_low_shot_all.sh                         // train low-shot features
+3) ./low-shot/aggre_svm_low_shot.sh                             // test and aggregate testing results.
 
 ### places05 track
 
