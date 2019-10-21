@@ -16,11 +16,11 @@ The base process of our project is :
 
 details are explained below.
 
-All the pretrained models and extracted features could be download [here](), extracting code is : 
+All the pretrained models and extracted features could be download **[here]**(https://pan.baidu.com/s/1EpBKSlRk6VwRcOCbnxgpkw&shfl=shareset), extracting code is: **f28f**
 
 ### extracting features from pre-training model.
 
-we use [deeperCluster](https://research.fb.com/publications/unsupervised-pre-training-of-image-features-on-non-curated-data/) as our baseline. And fine-tune it on ImageNet-1k. You could download our fine-tuned model from [here]().
+we use [deeperCluster](https://research.fb.com/publications/unsupervised-pre-training-of-image-features-on-non-curated-data/) as our baseline. And fine-tune it on ImageNet-1k. You could download our fine-tuned model from **[here]**(https://pan.baidu.com/s/1EpBKSlRk6VwRcOCbnxgpkw&shfl=shareset), extracting code is: **f28f**
 
 To extract feature representations using pre-training model, you could use **./feature_extractor/extract_feature.sh**
 
@@ -29,7 +29,7 @@ To extract feature representations using pre-training model, you could use **./f
 1) --data_path: dataset path locally, e.g. '/mnt/lustre/user/data/VOCdevkit/VOC2007'
 2) --pretrained: pretrained model deeperCluster 
 
-you could also download our extracted features for our best result from [here]()
+you could also download our extracted features for our best result from **[here]**(https://pan.baidu.com/s/1EpBKSlRk6VwRcOCbnxgpkw&shfl=shareset), extracting code is: **f28f**
 
 ### voc07 challenge track
 
@@ -42,7 +42,7 @@ To train and test your svm from scratch, you could follow:
 
 ### low-shot track
 
-Training and testing instructions of this track is similar to voc07 track. You could download trained SVM model and sampled targets of voc07 trainval split for low-shot track [here]()
+Training and testing instructions of this track is similar to voc07 track. You could download trained SVM model and sampled targets of voc07 trainval split for low-shot track **[here]**(https://pan.baidu.com/s/1EpBKSlRk6VwRcOCbnxgpkw&shfl=shareset), extracting code is: **f28f**
 
 To train and test from scratch, you could follow:
 
@@ -56,6 +56,6 @@ To train from scratch, you could use:
 
 ./places/eval_linear_places205.sh
 
-Use our trained places model(you could download trained places model [here]()):
+Use our trained places model(you could download trained places model**[here]**(https://pan.baidu.com/s/1EpBKSlRk6VwRcOCbnxgpkw&shfl=shareset), extracting code is: **f28f**):
 
 ./places/eval_linear_places205_save_json.sh
