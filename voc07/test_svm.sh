@@ -6,7 +6,7 @@ output_path=./trained_svm/
 test_log_name=test_svm_voc07.log
 
 
-srun python tools/svm/test_svm.py \
+srun -p AD python tools/svm/test_svm.py \
   --data_file=${test_data_file} \
   --targets_data_file=${test_targets_data_file} \
   --json_targets ./test_targets.json \

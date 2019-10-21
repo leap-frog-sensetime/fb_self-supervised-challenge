@@ -1,9 +1,9 @@
 #!/bin/sh
 
-output_path=./your_own_training
+output_path=./your_local_training_output_path
 mkdir -p ${output_path}
 
-srun python tools/svm/train_svm_kfold.py \
+srun -p AD python tools/svm/train_svm_kfold.py \
   --data_file path_to_your_local_extracted_trainvalSplit_features_voc07/features.npy \
   --targets_data_file path_to_your_local_extracted_trainvalSplit_labels_voc07/labels.npy \
   --costs_list "1.0,10.0" \
