@@ -16,7 +16,7 @@ The base process of our project is :
 
 details are explained below.
 
-All the pretrained models and extracted features could be download **[here]**(https://pan.baidu.com/s/1FHSSZCEvTU7llk_EvKBEpw&shfl=shareset), extracting code is: **6i32**
+All the pretrained models and extracted features could be download from [resource download link](https://pan.baidu.com/s/1FHSSZCEvTU7llk_EvKBEpw&shfl=shareset), extracting code is: **6i32**
 
 ### extracting features from pre-training model.
 
