@@ -158,8 +158,6 @@ def main(args):
 
     logger.info('model to cuda')
 
-    # set optimizer
-    optimizer = sgd_optimizer(reglog, args.lr, args.wd)
 
     ## variables to reload to fetch in checkpoint
     to_restore = {'epoch': 0, 'start_iter': 0}
@@ -167,40 +165,12 @@ def main(args):
 
     model.eval()
 
-    save_feature(args, model, optimizer, train_loader, 'trainval')
-    save_feature(args, model, optimizer, val_loader, 'test')
+    save_feature(args, model, train_loader, 'trainval')
+    save_feature(args, model, val_loader, 'test')
 
     print('save finished')
-   
 
-class RegLog(nn.Module):
-    """Creates logistic regression on top of frozen features"""
-    def __init__(self, num_labels, conv):
-        super(RegLog, self).__init__()
-        if conv < 3:
-            av = 18
-            s = 9216
-        elif conv < 5:
-            av = 14
-            s = 8192
-        elif conv < 8:
-            av = 9
-            s = 9216
-        elif conv < 11:
-            av = 6
-            s = 8192
-        elif conv < 14:
-            av = 3
-            s = 8192
-        self.av_pool = nn.AvgPool2d(av, stride=av, padding=0)
-        self.linear = nn.Linear(s, num_labels)
-
-    def forward(self, x):
-        x = self.av_pool(x)
-        x = x.view(x.size(0), -1)
-        return self.linear(x)
-
-def save_feature(args, model, reglog, optimizer, loader, split):
+def save_feature(args, model, loader, split):
     feature_output = []
     label_output = []
 
