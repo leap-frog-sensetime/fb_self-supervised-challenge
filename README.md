@@ -2,7 +2,7 @@
 
 ### this project is mainly created for facebook self-supervised learning challenge at ICCV19.
 
-Please check the challenge detail from [here](https://sites.google.com/view/fb-ssl-challenge-iccv19/home#h.p_Yhrh_WnhW4Hh)
+Please check the challenge detail from [challenge website](https://sites.google.com/view/fb-ssl-challenge-iccv19/home#h.p_Yhrh_WnhW4Hh)
 
 For the details of our method, you should check the paper which would be public soon.
 
@@ -16,11 +16,11 @@ The base process of our project is :
 
 details are explained below.
 
-All the pretrained models and extracted features could be download **[here]**(https://pan.baidu.com/s/1EpBKSlRk6VwRcOCbnxgpkw&shfl=shareset), extracting code is: **f28f**
+All the pretrained models and extracted features could be download **[here]**(https://pan.baidu.com/s/1FHSSZCEvTU7llk_EvKBEpw&shfl=shareset), extracting code is: **6i32**
 
 ### extracting features from pre-training model.
 
-we use [deeperCluster](https://research.fb.com/publications/unsupervised-pre-training-of-image-features-on-non-curated-data/) as our baseline. And fine-tune it on ImageNet-1k. You could download our fine-tuned model from **[here]**(https://pan.baidu.com/s/1EpBKSlRk6VwRcOCbnxgpkw&shfl=shareset), extracting code is: **f28f**
+we use [deeperCluster](https://research.fb.com/publications/unsupervised-pre-training-of-image-features-on-non-curated-data/) as our baseline. And fine-tune it on ImageNet-1k. You could download our fine-tuned model from the link at the beginning.
 
 To extract feature representations using pre-training model, you could use **./feature_extractor/extract_feature.sh**
 
@@ -29,7 +29,7 @@ To extract feature representations using pre-training model, you could use **./f
 1) --data_path: dataset path locally, e.g. '/mnt/lustre/user/data/VOCdevkit/VOC2007'
 2) --pretrained: pretrained model deeperCluster 
 
-you could also download our extracted features for our best result from **[here]**(https://pan.baidu.com/s/1EpBKSlRk6VwRcOCbnxgpkw&shfl=shareset), extracting code is: **f28f**
+you could also download our extracted features for our best result from the link at the beginning.
 
 ### voc07 challenge track
 
@@ -42,7 +42,7 @@ To train and test your svm from scratch, you could follow:
 
 ### low-shot track
 
-Training and testing instructions of this track is similar to voc07 track. You could download trained SVM model and sampled targets of voc07 trainval split for low-shot track **[here]**(https://pan.baidu.com/s/1EpBKSlRk6VwRcOCbnxgpkw&shfl=shareset), extracting code is: **f28f**
+Training and testing instructions of this track is similar to voc07 track. You could download trained SVM model and sampled targets of voc07 trainval split for low-shot track from the link at the beginning.
 
 To train and test from scratch, you could follow:
 
@@ -56,6 +56,6 @@ To train from scratch, you could use:
 
 ./places/eval_linear_places205.sh
 
-Use our trained places model(you could download trained places model**[here]**(https://pan.baidu.com/s/1EpBKSlRk6VwRcOCbnxgpkw&shfl=shareset), extracting code is: **f28f**):
+Use our trained places model(you could download trained places model from the link at the beginning.
 
 ./places/eval_linear_places205_save_json.sh
